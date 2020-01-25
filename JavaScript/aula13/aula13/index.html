@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercícios Aula 13 </title>
+</head>
+<body>
+    <script>
+    const nome = prompt('Digite seu nome completo: ');
+    const tamanhoNome = nome.length;
+    const primeiroIndice = nome[0];
+    const ultimoIndice = nome[tamanhoNome - 1];
+    const last3Letters = nome.slice(-3, );
+    const palavrasNome = nome.split(" ")[0] + ', ' + nome.split(" ")[1];
+    const nomeUp = nome.toUpperCase();
+    const nomeDown = nome.toLowerCase();
+
+    document.body.innerHTML += `Seu nome é: ${nome} <br />`;
+    document.body.innerHTML += `Seu nome tem ${tamanhoNome} letras <br />`;
+    document.body.innerHTML += `Qual o primeiro índice do seu nome? ${primeiroIndice}<br />`;
+    document.body.innerHTML += `Qual o último índice do seu nome? ${ultimoIndice}<br />`;
+    document.body.innerHTML += `As 3 últimas letras do seu nome são: ${last3Letters}<br />`;
+    document.body.innerHTML += `As palavras do seu nome são: ${palavrasNome}<br />`;
+    document.body.innerHTML += `Seu nome com letras maiúsculas: ${nomeUp}<br />`;
+    document.body.innerHTML += `Seu nome com letras minúsculas: ${nomeDown}<br />`;
+    </script>
+    
+</body>
+</html>
